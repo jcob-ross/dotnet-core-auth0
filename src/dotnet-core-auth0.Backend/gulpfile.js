@@ -11,7 +11,7 @@ function root(args) {
 }
 
 const paths = {
-  webroot: './wwwroot/',
+  webroot: './wwwroot/spa/',
   sourceroot: '../dotnet-core-auth0.Client/dist/'
 };
 
