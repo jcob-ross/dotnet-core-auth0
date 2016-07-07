@@ -1,4 +1,4 @@
-## `WIP` - Angular2 /w Webpack SPA (client) and ASP.NET Core as backend
+## Angular2 /w Webpack SPA (client) and ASP.NET Core as backend
 (Auth0 & JWT for authentication/authorization)
 
 [Is Angular 2 Ready Yet?](http://splintercode.github.io/is-angular-2-ready/) (tl;dr; No, but soon<sup>TM</sup>)
@@ -42,7 +42,7 @@ There is no 'quick' start.
 >   (as <strong>single</strong> line <strong>without</strong> ---BEGIN CERT.. and  ...END CERT..---</br>
 >    string -> bytes -> fed into X509Certificate' ctor)
 
-```bash
+```
 git clone
 
 # in client folder (src/dotnet-core-auth0.Client)
@@ -53,7 +53,7 @@ dotnet restore
 ```
 
 ## Backend Gulp scripts
-```bash
+```
 gulp clean # cleans /wwwroot
 gulp copy-client # copies files from client's /dist folder to backend's /wwwroot
 
@@ -81,3 +81,4 @@ gulp copy-client # copies files from client's /dist folder to backend's /wwwroot
 * To generate docs using [TypeDoc](http://typedoc.io/) :
 `npm run docs`
 
+![recorded usage](/preview-clip.gif)
