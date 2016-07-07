@@ -1,0 +1,10 @@
+<p>
+  Home Works!
+</p>
+
+<div>
+  <button type="button" (click)="onPingClick()">Ping</button>
+  <button type="button" (click)=onSecurePingClick()>Secure Ping</button>
+  <button type="button" (click)=onOwnerPingClick()>Owner-only Ping</button>
+</div>
+<p *ngIf="message?.message.length > 0">{{ message | json }}</p>

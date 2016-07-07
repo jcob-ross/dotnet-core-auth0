@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///webpack:///src/style/app.scss"],"names":[],"mappings":"AAAA,KAAK,mBAAmB,WAAW,eAAe,CAAC,EAAE,aAAa","file":"css/app.css","sourcesContent":["body{background:#0147A7;color:#fff;overflow:hidden}a{color:#03A9F4}\n\n\n\n/** WEBPACK FOOTER **\n ** webpack:///src/style/app.scss\n **/"],"sourceRoot":""}

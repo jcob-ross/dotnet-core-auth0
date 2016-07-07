@@ -1,0 +1,37 @@
+﻿@inject Microsoft.AspNetCore.Hosting.IHostingEnvironment HostingEnvironment
+@inject dotnet_core_auth0.Backend.Infrastructure.Deployment.IDeploymentEnvironment DeploymentEnvironment
+@inject Microsoft.Extensions.Options.IOptions<dotnet_core_auth0.Backend.Infrastructure.AppSettings> AppSettings
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewBag.Title - @AppSettings.Value.SiteTitle</title>
+
+  <environment names="Development">
+  </environment>
+  <environment names="Staging,Production">
+  </environment>
+
+  @RenderSection("head", required: false)
+</head>
+<body>
+  @RenderBody()
+
+  <environment names="Development">
+  </environment>
+  <environment names="Staging,Production">
+  </environment>
+
+  @RenderSection("scripts", required: false)
+</body>
+</html>
+
+<cache>
+  <!-- Environment: @DeploymentEnvironment.Environment -->
+  <!-- Application: @DeploymentEnvironment.Application -->
+  <!-- Deployment: @DeploymentEnvironment.DeploymentSha -->
+  <!-- Framework: @DeploymentEnvironment.Framework -->  
+  <!-- OS: @DeploymentEnvironment.OS  -->
+</cache>

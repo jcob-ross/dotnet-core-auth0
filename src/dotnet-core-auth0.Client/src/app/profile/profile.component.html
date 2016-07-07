@@ -1,0 +1,14 @@
+<p>
+  User profile
+</p>
+
+<table>
+  <tr>
+    <th>Claim type</th>
+    <th>Claim value</th>
+  </tr>
+  <tr *ngFor="let claim of (profile$ | async)?.claims">
+    <td>{{ claim.type }}</td>
+    <td>{{ claim.value }}</td>
+  </tr>
+</table>

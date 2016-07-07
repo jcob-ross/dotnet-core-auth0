@@ -1,0 +1,10 @@
+{
+  "name": "dotnet-core-auth0",
+  "version": "0.0.0",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "rimraf": "2.5.3",
+    "gulp-util": "3.0.7",
+    "gulp-expect-file": "0.0.7"
+  }
+}

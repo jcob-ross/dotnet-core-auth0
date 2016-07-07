@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5E847315-F992-4E1D-BB58-2CC6229CB245}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{90398C70-2F6A-47DF-9221-9E5A86350534}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "dotnet-core-auth0.Backend", "src\dotnet-core-auth0.Backend\dotnet-core-auth0.Backend.xproj", "{9F708EC0-4730-4F08-8753-D69DC10B1463}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "dotnet-core-auth0.Data", "src\dotnet-core-auth0.Data\dotnet-core-auth0.Data.xproj", "{DB398F28-0518-429D-AB0B-62FEE37AFD8A}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "dotnet-core-auth0.Client", "src\dotnet-core-auth0.Client\dotnet-core-auth0.Client.xproj", "{9203AC56-C3C6-4C77-ACF1-579BE2DD3E18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B3B62810-FABC-49D1-A861-3B9B779C6F99}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "dotnet-core-auth0.Data.Test", "test\dotnet-core-auth0.Data.Test\dotnet-core-auth0.Data.Test.xproj", "{C8F265D9-B7AF-4165-A96E-65FF31A3CF46}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "dotnet-core-auth0.Backend.Test", "test\dotnet-core-auth0.Backend.Test\dotnet-core-auth0.Backend.Test.xproj", "{A38F935E-699B-4BD0-BD93-FDACF52EBD4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F708EC0-4730-4F08-8753-D69DC10B1463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F708EC0-4730-4F08-8753-D69DC10B1463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F708EC0-4730-4F08-8753-D69DC10B1463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F708EC0-4730-4F08-8753-D69DC10B1463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB398F28-0518-429D-AB0B-62FEE37AFD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB398F28-0518-429D-AB0B-62FEE37AFD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB398F28-0518-429D-AB0B-62FEE37AFD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB398F28-0518-429D-AB0B-62FEE37AFD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9203AC56-C3C6-4C77-ACF1-579BE2DD3E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9203AC56-C3C6-4C77-ACF1-579BE2DD3E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F265D9-B7AF-4165-A96E-65FF31A3CF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F265D9-B7AF-4165-A96E-65FF31A3CF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F265D9-B7AF-4165-A96E-65FF31A3CF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F265D9-B7AF-4165-A96E-65FF31A3CF46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A38F935E-699B-4BD0-BD93-FDACF52EBD4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38F935E-699B-4BD0-BD93-FDACF52EBD4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38F935E-699B-4BD0-BD93-FDACF52EBD4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38F935E-699B-4BD0-BD93-FDACF52EBD4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F708EC0-4730-4F08-8753-D69DC10B1463} = {5E847315-F992-4E1D-BB58-2CC6229CB245}
+		{DB398F28-0518-429D-AB0B-62FEE37AFD8A} = {5E847315-F992-4E1D-BB58-2CC6229CB245}
+		{9203AC56-C3C6-4C77-ACF1-579BE2DD3E18} = {5E847315-F992-4E1D-BB58-2CC6229CB245}
+		{C8F265D9-B7AF-4165-A96E-65FF31A3CF46} = {B3B62810-FABC-49D1-A861-3B9B779C6F99}
+		{A38F935E-699B-4BD0-BD93-FDACF52EBD4C} = {B3B62810-FABC-49D1-A861-3B9B779C6F99}
+	EndGlobalSection
+EndGlobal

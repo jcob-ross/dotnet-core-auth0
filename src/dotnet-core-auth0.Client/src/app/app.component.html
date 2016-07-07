@@ -1,0 +1,25 @@
+<header>
+  <nav>
+    <a [routerLink]="['/']">Home</a>
+    <a [routerLink]="['/about']">About</a>
+    <span class="login-container pull-right">
+      <span *ngIf="userPictureUrl != null">
+        <img class="login-avatar" [src]="userPictureUrl" alt="user avatar">
+      </span>
+      <a *ngIf="!isLoggedIn()" (click)="onLogInClick()">Login</a>
+      <a *ngIf="isLoggedIn()" [routerLink]="['profile']">{{ userName }}</a>
+      <a *ngIf="isLoggedIn()" class="logout-button" (click)="onLogOutClick()">LogOut</a>  
+    </span>    
+  </nav>
+</header>
+<main>
+  <h1 class="title">Hello from {{api.title}}!</h1>
+
+  <!-- Images (and assets) are parsed and loaded from within the public directory -->
+  <img src="/img/angular.png">
+
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <a [href]="url" target="_blank">{{ urlText }}</a>
+</footer>
